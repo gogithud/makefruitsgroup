@@ -24,7 +24,7 @@ body {
     opacity: 0;
     width: 0;
     height: 0;
-    border-radius: 20%; /* 円形にする場合 */
+    border-radius: 50%; /* 円形にする場合 */
   }
   
   .slider {
@@ -36,7 +36,7 @@ body {
     bottom: 0;
     background-color: #ccc;
     transition: 0.4s;
-    border-radius: 20%; /* 円形にする場合 */
+    border-radius: 30%; /* 円形にする場合 */
   }
   
   .slider:before {
@@ -48,21 +48,20 @@ body {
     bottom: 3px;
     background-color: white;
     transition: 0.4s;
-    border-radius: 20%; /* 円形にする場合 */
+    border-radius: 50%; /* 円形にする場合 */
   }
   
   input:checked + .slider {
     background-color: #252e35;
-    border-radius: 20%; /* 円形にする場合 */
+    border-radius: 30%; /* 円形にする場合 */
   }
   
   input:checked + .slider:before {
     transform: translateX(20px);
-    border-radius: 20%; /* 円形にする場合 */
+    border-radius: 50%; /* 円形にする場合 */
   }
   .image-container {
-    width: 100px;
-    height: 100px;
+    width: 1430px;
   }
   .menu-button {
     display: inline-block;
@@ -102,4 +101,6 @@ body {
   .menu-button:hover a {
     text-decoration: none;
   }
-  
+  .menu-button {
+    padding: 10px;
+  }

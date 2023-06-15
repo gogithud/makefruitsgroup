@@ -1,25 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ブラックモード/ワイトモードの切り替え</title>
+  <title>make fruits groupe</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* 追加されたCSSスタイル */
+    header {
+      display: flex;
+      align-items: center;
+      position: fixed; /* ヘッダーを固定位置にする */
+      top: 0;
+      width: 100%;
+      transition: top 0.3s; /* スクロール時のトランジション効果を追加する */
+    }
+
+    .image-container {
+      margin-right: 10px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu-button {
+      margin-right: 10px;
+    }
+
+    .switch {
+      margin-left: auto;
+      margin-right: 10px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* スクロール時の隠し/表示用クラス */
+    .hide {
+      top: -100px; /* 隠し状態でヘッダーを上に移動 */
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <header style="background-color: rgba(60, 58, 58, 0.765);">
     <div class="image-container">
-        <img src="make.png" alt="logo">
+        <img src="make.png" alt="logo" height="100">
     </div>
     <nav>
         <ul>
           <li class="menu-button"><a href="#">Home</a></li>
           <li class="menu-button"><a href="#">About</a></li>
-          <li class="menu-button"><a href="#"></a></li>
+          <li class="menu-button"><a href="#">News</a></li>
+          <li class="menu-button"><a href="#">Project</a></li>
+          <li class="menu-button"><a href="#">Blog</a></li>
         </ul>
     </nav>
-    <label class="switch">
-      <input type="checkbox" id="mode-toggle">
-      <span class="slider"></span>
-    </label>
+    <img src="icon_160162_128.png" alt="sun" height="35" style="padding: 10px;">
+    <nav style="padding: 10px;">
+     <label class="switch">
+       <input type="checkbox" id="mode-toggle">
+       <span class="slider"></span>
+     </label>
+    </nav>
+     <img src="icon_150672_128.png" alt="moon" height="35" style="padding: 10px;">
   </header>
 
   <script src="script.js"></script>
